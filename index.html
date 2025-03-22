@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante</title>
+    <title>GitFlow Restaurante Japonés</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hola</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">GitFlow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#descripcion">Descripción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-danger ms-3" href="#login">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/sushi1.jpeg" class="d-block w-100" alt="Sushi tradicional">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Bienvenido a GitFlow</h1>
+                        <p class="lead">Auténtico sabor japonés en cada plato</p>
+                        <a href="carta.html" class="btn btn-light mt-3 px-4 py-2">Ver Carta</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/ramen1.jpeg" class="d-block w-100" alt="Ramen artesanal">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Sabores que Enamoran</h1>
+                        <p class="lead">Ramen, sushi, y mucho más</p>
+                        <a href="carta.html" class="btn btn-light mt-3 px-4 py-2">Ver Carta</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="img/interior1.jpg" class="d-block w-100" alt="Ambiente japonés">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Ambiente Tradicional</h1>
+                        <p class="lead">Un pedazo de Japón en tu ciudad</p>
+                        <a href="carta.html" class="btn btn-light mt-3 px-4 py-2">Ver Carta</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+    
+
+    <!-- Descripción -->
+    <section id="descripcion" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Tradición y Sabor</h2>
+            <p>En GitFlow fusionamos la tradición japonesa con una experiencia culinaria moderna. Disfruta de sushi, ramen y mucho más en un ambiente auténtico y acogedor.</p>
+            
+            <!-- Botones a otras páginas -->
+            <div class="mt-4">
+                <a href="carta.html" class="btn btn-outline-danger me-3 px-4 py-2">Ver Carta</a>
+                <a href="quienes-somos.html" class="btn btn-outline-dark px-4 py-2">Quiénes Somos</a>
+            </div>
+
+            <!-- Información de ubicación -->
+            <div class="mt-5">
+                <h5 class="mb-2 text-danger">Ubicación</h5>
+                <p>📍 Calle Sakura #123, Barrio Nippon, Ciudad Gourmet</p>
+                <p>🕒 Horario: Lunes a Domingo | 12:00 PM - 10:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 GitFlow Restaurante Japonés. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

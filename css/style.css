@@ -1,0 +1,39 @@
+.btn-outline-danger {
+    border: 2px solid red;
+    color: red;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-danger:hover {
+    background-color: red;
+    color: white;
+}
+
+.btn-outline-dark {
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-dark:hover {
+    background-color: black;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    border-radius: 12px;
+    padding: 20px;
+}
